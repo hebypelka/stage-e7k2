@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#050607" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Encore</title>
+  <link rel="icon" href="data:," />
+  <script type="module" crossorigin src="/Program Files/Git/stage-e7k2/assets/index-Vae9TXf1.js"></script>
+  <link rel="stylesheet" crossorigin href="/Program Files/Git/stage-e7k2/assets/index-BSZ21HpZ.css">
+</head>
+<body>
+  <canvas id="gl"></canvas>
+
+  <!-- главное меню: поверх живой сцены с глобусом -->
+  <div id="menu" class="screen">
+    <header class="top">
+      <div class="mark"><b>E</b><span>Сезон 0</span></div>
+      <button class="me lg"><i></i><span id="who">Гость</span></button>
+    </header>
+    <div class="brand">
+      <div class="hb lg"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M3 18h18v2H3zm0-2 2-9 4 4 3-7 3 7 4-4 2 9z"/></svg>С днём рождения, Диана</div>
+      <div class="logo">ENCORE</div>
+      <div class="sub">фестиваль одной ночи · 30.12</div>
+    </div>
+    <nav class="items">
+      <button class="item primary" data-act="show"><em>01</em><span class="t">Шоу: Encore</span><span class="d">Войти на площадку</span><u></u></button>
+      <button class="item" data-act="worlds"><em>02</em><span class="t">Миры</span><span class="d">Скоро · Сезон 1</span><u></u></button>
+      <button class="item" data-act="char"><em>03</em><span class="t">Персонаж</span><span class="d" id="charSub">Манекен</span><u></u></button>
+      <button class="item" data-act="settings"><em>04</em><span class="t">Настройки</span><span class="d">Графика, музыка</span><u></u></button>
+    </nav>
+    <div id="pins"></div>
+    <div class="geo">59.93° N · 30.31° E<br /><b>Санкт-Петербург</b></div>
+    <div class="ticker"><div><span>Twenty One Pilots</span><span>GONE.Fludd</span><span>The Neighbourhood</span><span>Пятёрка × MellSher</span><span>и секретный гость</span><span>Twenty One Pilots</span><span>GONE.Fludd</span><span>The Neighbourhood</span><span>Пятёрка × MellSher</span><span>и секретный гость</span></div></div>
+  </div>
+
+  <!-- боковые панели меню -->
+  <div id="panel" class="panel glass" hidden>
+    <div class="phead"><span id="ptitle"></span><button class="x" id="pclose" aria-label="Закрыть">✕</button></div>
+    <div id="pbody"></div>
+  </div>
+
+  <!-- гримёрка -->
+  <div id="dressUI" class="screen" hidden>
+    <button class="chip lg" id="dBack">← Меню</button>
+    <div class="dTitle">Гримёрка</div>
+    <div class="dInfo">
+      <div class="dCount" id="dCount">01 / 08</div>
+      <div class="dName" id="dName">Монохром</div>
+      <div class="dFan" id="dFan"></div>
+      <div class="dNav"><button class="rb lg" id="dPrev" aria-label="Предыдущий скин">‹</button><button class="rb lg" id="dNext" aria-label="Следующий скин">›</button><span>← → на клавиатуре</span></div>
+    </div>
+    <div class="dSide glass">
+      <div class="lbl">Имя над головой</div><input class="inp" id="nick" maxlength="14" />
+      <div class="lbl">Скин</div><div class="chips" id="skins"></div>
+      <div class="lbl">Примерить танец</div><div class="chips" id="dn"></div>
+    </div>
+  </div>
+
+  <!-- интерфейс в игре -->
+  <div id="hud" class="screen" hidden>
+    <button class="chip glass" id="toMenu">Меню</button>
+    <div class="chip glass" id="fps" hidden></div>
+    <div class="hint glass" id="hint">WASD — идти · Shift — бег · Пробел — прыжок · B — танцы · V — камера · C — дальний план · 1–5 — реакции</div>
+    <div class="reacts glass" id="reacts"></div>
+    <div id="wheel" class="wheel" hidden></div>
+    <div id="stick"><i></i></div>
+    <div id="pad">
+      <button class="pb" data-pad="heart">❤</button>
+      <button class="pb" data-pad="fire">🔥</button>
+      <button class="pb" data-pad="dance">Танец</button>
+      <button class="pb big" data-pad="jump">Прыжок</button>
+    </div>
+  </div>
+
+  <canvas id="fx"></canvas>
+  <div id="fade"></div>
+  <div id="rotate"><div class="phone"></div><p>Поверни телефон</p></div>
+</body>
+</html>
