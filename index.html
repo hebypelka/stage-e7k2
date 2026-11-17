@@ -8,8 +8,8 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>Encore</title>
   <link rel="icon" href="data:," />
-  <script type="module" crossorigin src="/stage-e7k2/assets/index-DcwmgPP-.js"></script>
-  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-Cge3x3Yg.css">
+  <script type="module" crossorigin src="/stage-e7k2/assets/index-Dopy_CgR.js"></script>
+  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-CHLdlHB7.css">
 </head>
 <body>
   <canvas id="gl"></canvas>
@@ -62,6 +62,10 @@
   <!-- интерфейс в игре -->
   <div id="hud" class="screen" hidden>
     <button class="chip glass" id="toMenu">Меню</button>
+    <button class="chip glass" id="showBtn">▶ Шоу</button>
+    <div class="chip glass" id="showBar" hidden></div>
+    <div id="count" hidden></div>
+    <div id="title"><b></b><span></span></div>
     <div class="chip glass" id="fps" hidden></div>
     <div class="hint glass" id="hint">WASD — идти · Shift — бег · Пробел — прыжок · B — танцы · V — камера · C — дальний план · 1–5 — реакции</div>
     <div class="reacts glass" id="reacts"></div>
@@ -76,6 +80,7 @@
   </div>
 
   <canvas id="fx"></canvas>
+  <div id="strobe"></div>
   <div id="fade"></div>
   <div id="rotate"><div class="phone"></div><p>Поверни телефон</p></div>
 </body>
