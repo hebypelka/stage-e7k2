@@ -12,8 +12,8 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>Encore</title>
   <link rel="icon" href="data:," />
-  <script type="module" crossorigin src="/stage-e7k2/assets/index-BK0v_jjU.js"></script>
-  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-BvIjIMk3.css">
+  <script type="module" crossorigin src="/stage-e7k2/assets/index-CY81HtrQ.js"></script>
+  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-Ds1qPMrR.css">
 </head>
 <body>
   <canvas id="gl"></canvas>
@@ -21,7 +21,7 @@
   <!-- главное меню: поверх живой сцены с глобусом -->
   <div id="menu" class="screen">
     <header class="top">
-      <div class="mark"><b>E</b><span>Сезон 0</span></div>
+      <div class="mark"><b>E</b><span>Сезон 0</span><span class="net-pill" id="netPill" hidden>Оффлайн</span></div>
       <button class="me lg"><i></i><span id="who">Гость</span></button>
     </header>
     <div class="brand">
@@ -74,12 +74,19 @@
     <div class="chip glass" id="fps" hidden></div>
     <div class="hint glass" id="hint">WASD — идти · Shift — бег · Пробел — прыжок · B — танцы (Q — ещё) · V/C — камера · Esc — меню · 1–5 — реакции</div>
     <div class="reacts glass" id="reacts"></div>
+    <button class="chip glass" id="chatToggle" title="Чат (Enter)">💬 Чат</button>
+    <div class="chat-feed" id="chatFeed"></div>
+    <form class="chat-box glass" id="chatBox" hidden>
+      <input class="inp" id="chatInput" maxlength="90" placeholder="Написать в чат…" autocomplete="off" />
+      <button type="submit" class="hd-btn pri">OK</button>
+    </form>
     <div id="wheel" class="wheel" hidden></div>
     <div id="stick"><i></i></div>
     <div id="pad">
       <button class="pb" data-pad="heart">❤</button>
       <button class="pb" data-pad="fire">🔥</button>
       <button class="pb" data-pad="dance">Танец</button>
+      <button class="pb" data-pad="chat">💬</button>
       <button class="pb big" data-pad="jump">Прыжок</button>
     </div>
   </div>
