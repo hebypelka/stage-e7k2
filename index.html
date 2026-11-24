@@ -12,8 +12,8 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>Encore</title>
   <link rel="icon" href="data:," />
-  <script type="module" crossorigin src="/stage-e7k2/assets/index-iYWu4DDX.js"></script>
-  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-BFuwRIoW.css">
+  <script type="module" crossorigin src="/stage-e7k2/assets/index-cLGiYDMH.js"></script>
+  <link rel="stylesheet" crossorigin href="/stage-e7k2/assets/index-Go3JDrh2.css">
 </head>
 <body>
   <canvas id="gl"></canvas>
@@ -61,7 +61,10 @@
       <div class="lbl">Скин</div><div class="chips" id="skins"></div>
       <div class="lbl">Примерить танец</div>
       <div class="dn-row">
-        <select class="sel" id="dnSel"></select>
+        <div class="dd" id="dnDrop">
+          <button type="button" class="dd-btn lg" id="dnBtn"><span id="dnCur">Без танца</span><i>▾</i></button>
+          <div class="dd-menu glass" id="dnMenu" hidden></div>
+        </div>
         <button class="c lg" id="dnStop" title="Остановить танец">■</button>
       </div>
     </div>
